@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div>
-      About
+      <h1 className='text-6xl mb-4 text-white'>Github Finder</h1>
     </div>
   )
 }
