@@ -2,8 +2,8 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
-      <h1 className='text-6xl mb-4 text-white'>Github Finder</h1>
+    <div className='h-screen text-center'>
+      <h1 className='text-6xl  text-white text-center '>Github Finder</h1>
     </div>
   )
 }
