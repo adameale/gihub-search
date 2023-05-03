@@ -6,6 +6,27 @@ const githubReducer =(state,action) =>{
                 users:action.payload,
                 Loading:false,
             }
+
+            case 'GET_USER':
+                return {
+                    ...state,
+                    user:action.payload,
+                    Loading:false,   
+                }
+            case 'SET_LOADING':
+                return {
+                    ...state,
+                    Loading:true,
+
+                }
+
+                case 'CLEAR_USERS':
+                return {
+                    ...state,
+                    users:[],
+                    
+                }
+
         default:
             return state
     }

@@ -1,13 +1,18 @@
 import UserResults from "../components/user/UserResults"
+import UserSearch from "../components/user/UserSearch"
 
 
 function Home() {
   return (
     <>
-    <h1 className="text-6xl text-white ;">
+    <div className="h-screen items-center w-full snap-y overflow-scroll">
+      <div className="snap-start h-screen w-screen
+      ">
+       <UserSearch />
         <UserResults/>
-    </h1>
- 
+    
+        </div>
+    </div>
     </>
   )
 }
