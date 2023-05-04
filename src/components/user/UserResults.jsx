@@ -9,8 +9,8 @@ import UserItem from "./UserItem"
     return (
     <div className="h-screen grid grid-cols-1 gap-8 xl:grid-cols-4
     lg:grid-cols-3 md:cols-2 ">
-        {users.map((user)=>(
-           <UserItem key={user.id} user={user} />
+         {users.map((user) => (
+          <UserItem key={user.id} user={user} />
         ))}
     </div>
     ) 
