@@ -19,9 +19,9 @@ const github =axios.create({
 
 
  export const getUserAndRepos = async (login)=>{
-  const [user,repos] = await Promise.all[(
+  const [user,repos] = await Promise.all([
     github.get(`/users/${login}`),
     github.get(`/users/${login}/repos`),
-  )]
+  ])
   return {user:user.data, repos:repos.data}
  }
