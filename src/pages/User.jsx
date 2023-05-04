@@ -46,7 +46,7 @@ if(Loading){
         <div className='rounded-lg shadow-xl card image-full'>
           <figure>
             <img src={avatar_url} alt="" 
-            className='w-10 h-10 rounded-full' />
+          />
           </figure>
           <div className='justify-end card-body '>
             <h2 className='card-title mb-0'>{name}</h2>
@@ -67,16 +67,14 @@ if(Loading){
           <p>{bio}</p>
           <div className='mt-4 card-actions '>
 
-            <Link href={html_url} target='_blank' className='text-white'>Visit Github profile
-            </Link>
+            <a href={html_url} target='_blank' rel='noreferrer' className='text-white'>Visit Github profile
+            </a>
           </div>
         </div>
         <div className='w-full rounded-lg shadow-md  bg-base-100 stats'>
            {location && (
         <div className='stats'>
-          <div className='stat-title text-md '>
-         Location 
-          </div>
+          <div className='stat-title text-md '>    Location   </div>
           <div className='text-lg stat-value '>
             {location}
           </div>
